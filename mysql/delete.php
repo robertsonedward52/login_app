@@ -6,8 +6,8 @@
 
 <?php
 
-// function update updateTable
-	 updateTable();
+// function deleteRows form the users table
+	deleteRows();
 
  ?>
  		
@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>login Update</title>
+	<title>login Delete</title>
 	
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/form-style.css">
@@ -26,10 +26,10 @@
 
 	<div class="container d-flex justify-content-center mt-5">
 		
-		<div class="col-sm-6 mt-5 p-4 bg-info text-light">
-			<h1 class="text-center">Update User</h1>
+		<div class="col-sm-6 mt-5 p-4 bg-primary text-light">
+			<h1 class="text-center">Delete User</h1>
 			
-			<form action="update.php" method="post">
+			<form action="delete.php" method="post">
 				<!-- form group -->
 				<div class="form-group">
 					<label for="username">Username</label>
@@ -59,7 +59,7 @@
 					</select>
 				</div>
 
-				<button type="submit" value="UPDATE" name="submit" class="btn btn-primary">UPDATE</button>
+				<button type="submit" value="delete" name="submit" class="btn btn-danger">Delete</button>
 
 			</form>
 		
